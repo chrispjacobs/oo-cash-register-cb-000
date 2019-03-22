@@ -22,9 +22,7 @@ class CashRegister
   def apply_discount
     if @discount != nil
       step_one = 100 - @discount
-      puts step_one
       adjusted_percentage = step_one / 100.00
-      puts adjusted_percentage
       final_total = @total * adjusted_percentage
       "After the discount, the total comes to $#{final_total}."
     else
