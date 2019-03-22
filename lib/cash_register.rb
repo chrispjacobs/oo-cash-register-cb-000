@@ -51,3 +51,4 @@ register = CashRegister.new(20)
 register.add_item("macbook air", 1000)
 puts register.total
 puts register.apply_discount
+puts register.total
