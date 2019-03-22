@@ -4,6 +4,9 @@ class CashRegister
     @discount = employee_discount
     @purchased_stuff = []
   end
+  def total=(input_total)
+    @total = input_total
+  end
   def total
     @total
   end
