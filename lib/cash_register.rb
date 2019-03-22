@@ -24,6 +24,7 @@ class CashRegister
       step_one = 100 - @discount
       adjusted_percentage = step_one / 100.00
       step_two = @total * adjusted_percentage
+      final_total = Fixnum.new
       if step_two.class == Float
         final_total = step_two.to_i
       elsif step_two.class == Fixnum
