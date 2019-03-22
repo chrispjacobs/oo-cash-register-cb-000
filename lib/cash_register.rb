@@ -30,6 +30,7 @@ class CashRegister
         final_total = step_two
       end
       "After the discount, the total comes to $#{final_total}."
+      @total = final_total
     else
       "There is no discount to apply."
     end
