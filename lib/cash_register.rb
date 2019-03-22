@@ -42,3 +42,7 @@ class CashRegister
     end
   end
 end
+
+register = CashRegister.new(10)
+register.add_item("bacon", 100)
+puts register.apply_discount
