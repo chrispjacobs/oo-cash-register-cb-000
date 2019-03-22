@@ -46,6 +46,7 @@ class CashRegister
   end
 end
 
-register = CashRegister.new(10)
-register.add_item("bacon", 100)
+register = CashRegister.new(20)
+register.add_item("macbook air", 1000)
+puts register.total
 puts register.apply_discount
