@@ -23,7 +23,11 @@ class CashRegister
     if @discount != nil
       step_one = 100 - @discount
       adjusted_percentage = step_one / 100.00
-      final_total = @total * adjusted_percentage
+      step_two = @total * adjusted_percentage
+      if step_two.class == Float
+        final_total = step_two.to_i
+      elsif step_two.class == Fixnum
+        final_total = step_two
       "After the discount, the total comes to $#{final_total}."
     else
       "There is no discount to apply."
